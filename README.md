@@ -34,11 +34,18 @@ online-portfolio/
 │   ├── src/
 │   │   ├── main/
 │   │   │   ├── java/com/hannah/backend/
-│   │   │   │   ├── controller/
+│   │   │   │   ├── controller/                 # API layer
+│   │   │   │   |   |── ContractController.java
+│   │   │   │   |   |── ProjectController.java
+│   │   │   │   |   |── SkillController.java
 │   │   │   │   │   └── TaskController.java
-│   │   │   │   ├── service/
+│   │   │   │   ├── service/                    # the logic
+│   │   │   │   |   |── ProjectService.java
+│   │   │   │   |   |── SkillService.java
 │   │   │   │   │   └── TaskService.java
-│   │   │   │   ├── model/
+│   │   │   │   ├── model/                      # contains data
+│   │   │   │   |   |── Project.java
+│   │   │   │   |   |── Skill.java
 │   │   │   │   │   └── Task.java
 │   │   │   │   ├── repository/                 # empty (for later)
 │   │   │   │   └── BackendApplication.java
