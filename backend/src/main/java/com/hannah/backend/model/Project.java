@@ -13,6 +13,27 @@ public class Project {
     private String description;
     private String githubURL;
 
+    //constructor
+    public Project(Long id, String title, String description, String githubURL) {
+        this.id = id;
+        this.title = title;
+        this.description = description;
+        this.githubURL = githubURL;
+    }
 
+    public Long getId() {
+        return id;
+    }
 
+    public String getTitle() {
+        return title;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public String getGithubURL() {
+        return githubURL;
+    }
 }

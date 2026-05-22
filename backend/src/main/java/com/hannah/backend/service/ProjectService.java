@@ -9,12 +9,15 @@ package com.hannah.backend.service;
 import com.hannah.backend.model.Project;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
 public class ProjectService {
 
     public List<Project> getProjects() {
-        return null;
+        List<Project> projects = new ArrayList<>();
+        projects.add(new Project(1L, "Portfolio", "Full stack app", "https://github.com/hannah-xia-projects/online-portfolio"));
+        return projects;
     };
 }

@@ -25,7 +25,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/projects") //this is the url after local host to display all projects
-//@CrossOrigin(origins = "http://localhost:5173") //to put the contents into the frontend local host
+@CrossOrigin(origins = "http://localhost:5173") //to put the contents into the frontend local host
 public class ProjectController {
     //the project service object for project controller
     private final ProjectService projectService;
