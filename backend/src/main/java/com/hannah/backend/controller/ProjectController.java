@@ -16,10 +16,7 @@ package com.hannah.backend.controller;
 
 import com.hannah.backend.model.Project;
 import com.hannah.backend.service.ProjectService;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -37,7 +34,11 @@ public class ProjectController {
 
     //all http calls --> getMapping from spring
     @GetMapping
-    public List<Project> getProjects() {
-        return projectService.getProjects();
+    public List<Project> getProjects(
+            @RequestParam(required = false) String language, //use @RequestParam to allow for filtering calls
+            @RequestParam(required = false) Boolean frontend,
+            @RequestParam(required = false) Boolean backend,
+            @RequestParam(required = false) String tech) {
+        return projectService.getFilteredProjects(language, frontend, backend, tech); //call filteredProjects, if these params are null, we just retrieve all projects
     }
 }
