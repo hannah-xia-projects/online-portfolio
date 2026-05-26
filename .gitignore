@@ -20,3 +20,6 @@ Thumbs.db
 
 # output files
 out/
+
+#local files
+application-local.properties

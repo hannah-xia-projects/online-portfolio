@@ -42,10 +42,12 @@ online-portfolio/
 │   │   │   │   ├── service/                    # the logic
 │   │   │   │   |   |── ProjectService.java
 │   │   │   │   |   |── SkillService.java
+│   │   │   │   |   |── ContactService.java
 │   │   │   │   │   └── TaskService.java
 │   │   │   │   ├── model/                      # contains data
 │   │   │   │   |   |── Project.java
 │   │   │   │   |   |── Skill.java
+│   │   │   │   |   |── Contact.java
 │   │   │   │   │   └── Task.java
 │   │   │   │   ├── repository/                 # empty (for later)
 │   │   │   │   └── BackendApplication.java
