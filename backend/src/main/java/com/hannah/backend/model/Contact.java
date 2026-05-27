@@ -4,16 +4,25 @@
  */
 package com.hannah.backend.model;
 
+import jakarta.validation.constraints.Email;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
+
+import jakarta.validation.constraints.NotBlank;
 
 @Getter
 @Setter
 @AllArgsConstructor
 public class Contact {
     //attributes of a contact
+    @NotBlank //for security and to prevent bot spam, use not blank and email
     private String name;
+
+    @Email
+    @NotBlank
     private String email;
+
+    @NotBlank
     private String message;
 }
