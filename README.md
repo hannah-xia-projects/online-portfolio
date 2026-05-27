@@ -12,6 +12,18 @@ A personal project to build my online portfolio.
 ---
 
 ### Set Up The Backend
+
+1. If you want to run this portfolio code, you would need to create a file ```application-local.properties``` and put it in resource package under src/main.
+In there you must have this inside:
+```aiignore
+EMAIL_USERNAME=your-email@example.com
+EMAIL_PASSWORD=your-app-password
+```
+- This will set up the backend so it can send emails directly to you if someone fills out the contact form
+- **NEVER COMMIT THIS FILE TO GIT!**
+
+2. Run these commands on terminal to build backend:
+
 ```
 cd backend
 ./mvnw spring-boot:run
