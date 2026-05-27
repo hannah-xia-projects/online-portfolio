@@ -6,8 +6,15 @@
 
 package com.hannah.backend.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.List;
 
+@Getter
+@Setter
+@AllArgsConstructor
 public class Project {
     //project variables
     private Long id;
@@ -22,48 +29,48 @@ public class Project {
     private List<String> techStack; //a list that contains the tech stack used
     private List<String> languages; //a list that contains the languages used for each project
 
-    //constructor
-    public Project(Long id, String title, String description, String githubURL, boolean hasFrontend, boolean hasBackend, List<String> techStack, List<String> languages) {
-        this.id = id;
-        this.title = title;
-        this.description = description;
-        this.githubURL = githubURL;
-
-        this.hasFrontend = hasFrontend;
-        this.hasBackend = hasBackend;
-        this.techStack = techStack;
-        this.languages = languages;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public String getGithubURL() {
-        return githubURL;
-    }
-
-    public boolean isHasFrontend() {
-        return hasFrontend;
-    }
-
-    public boolean isHasBackend() {
-        return hasBackend;
-    }
-
-    public List<String> getTechStack() {
-        return techStack;
-    }
-
-    public List<String> getLanguages() {
-        return languages;
-    }
+//    //constructor
+//    public Project(Long id, String title, String description, String githubURL, boolean hasFrontend, boolean hasBackend, List<String> techStack, List<String> languages) {
+//        this.id = id;
+//        this.title = title;
+//        this.description = description;
+//        this.githubURL = githubURL;
+//
+//        this.hasFrontend = hasFrontend;
+//        this.hasBackend = hasBackend;
+//        this.techStack = techStack;
+//        this.languages = languages;
+//    }
+//
+//    public Long getId() {
+//        return id;
+//    }
+//
+//    public String getTitle() {
+//        return title;
+//    }
+//
+//    public String getDescription() {
+//        return description;
+//    }
+//
+//    public String getGithubURL() {
+//        return githubURL;
+//    }
+//
+//    public boolean isHasFrontend() {
+//        return hasFrontend;
+//    }
+//
+//    public boolean isHasBackend() {
+//        return hasBackend;
+//    }
+//
+//    public List<String> getTechStack() {
+//        return techStack;
+//    }
+//
+//    public List<String> getLanguages() {
+//        return languages;
+//    }
 }
