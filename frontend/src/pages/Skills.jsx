@@ -1,2 +1,8 @@
 import { useEffect, useState } from "react";
 import { getSkills } from "../api/skillsApi";
+
+import Navbar from "../components/Navbar";
+
+export default function Skills() {
+    return <h1>Skills Page</h1>;
+};
