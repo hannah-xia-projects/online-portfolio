@@ -6,11 +6,17 @@ export default  function Home() {
         <Navbar/>
 
             <section className="home">
-                <h1>Hi, I'm Hannah</h1>
-                <h2>Software Developer</h2>
 
-                <p>
-                    I build applications with modern technologies like React, Node.js, and APIs.
+                <div className="petal"></div>
+                <div className="petal"></div>
+                <div className="petal"></div>
+                <div className="petal"></div>
+                <div className="petal"></div>
+
+                <h1 className="title">Hi, I'm Hannah</h1>
+                <h2 className="subtitle">Software Developer and Designer</h2>
+                <p className="paragraph">
+                    Building clean, functional apps with a touch of creativity.
                 </p>
             </section>
         </>
