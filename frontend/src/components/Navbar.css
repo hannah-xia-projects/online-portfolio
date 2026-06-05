@@ -1,0 +1,57 @@
+/* Navbar container styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: auto;
+
+    padding: 10px 20px;
+    background: #0f172a;
+    color: white;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+
+    position: relative;
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+}
+
+/* Logo */
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Links */
+.nav-links a {
+    text-decoration: none;
+    color: #e2e8f0;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s;
+}
+
+/* Hover color */
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+/* Underline animation */
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background: #38bdf8;
+    transition: width 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}

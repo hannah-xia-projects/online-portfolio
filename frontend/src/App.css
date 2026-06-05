@@ -15,7 +15,8 @@ page specific styles
           #2e2a67,   /* dark purple */
           #aca984,
           #ead9a1,
-          #f6d6a7,    /* warm light */ #7d2ac8
+          #f6d6a7,    /* warm light */
+          #7d2ac8
   );
 
   color: white
@@ -207,7 +208,6 @@ petals!
   background-repeat: repeat-x;
 
   /* fade out the top */
-
   mask-image: linear-gradient(
           to top,
           black 60%,        /* fully visible bottom */
