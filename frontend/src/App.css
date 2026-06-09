@@ -221,3 +221,49 @@ petals!
   );
 
 }
+
+/* About page */
+.about {
+  min-height: 100vh;
+
+  padding: 40px 20px;
+  background-color: #2e2a67;
+  color: #e2e8f0;
+}
+
+.about h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  margin-bottom: 16px;
+  line-height: 1.6;
+  color: #94a3b8;
+}
+
+/* list for about section */
+.techlist {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* two columns */
+  gap: 10px 40px;
+}
+
+.techlist li {
+  position: relative;
+  padding-left: 20px;
+  color: #94a3b8;
+}
+
+.techlist li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: #b867ff;
+}
+
+.techlist li:hover span {
+  color: #38bdf8;
+}
