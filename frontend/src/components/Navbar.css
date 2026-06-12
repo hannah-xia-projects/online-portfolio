@@ -15,6 +15,7 @@
     z-index: 1000;
 
     border-bottom: 1px solid #313c65;
+    height: 28px;
 }
 
 .nav-links {
@@ -24,8 +25,17 @@
 
 /* Logo */
 .logo {
-    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-weight: bold;
+    font-size: 18px;
+}
+
+.logo img {
+    height: 38px;
+    width: auto;
+    display: block;
 }
 
 /* Links */

@@ -36,6 +36,15 @@ export function About() {
                     </div>
 
                 </div>
+
+
+                <div className="about-cta">
+                    <h2>Let's Connect</h2>
+                    <p>
+                        I'm always open to new opportunities, collaborations, or just a chat.
+                    </p>
+                    Say Hi
+                </div>
             </section>
         </>
     );

@@ -1,11 +1,14 @@
 import { Link } from "react-router-dom";
 import "./Navbar.css"; //navbar styling
+import logo from "../assets/logo-lpurp.png";
 
 export default function Navbar() {
     return (
         <nav className="navbar">
 
-            <div className="logo">Hannah Xia</div>
+            <div className="logo">
+                <img src={logo} alt="Logo" />
+            </div>
 
             <div className="nav-links">
                 <Link to="/">Home</Link>
