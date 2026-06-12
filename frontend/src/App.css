@@ -227,8 +227,36 @@ petals!
   min-height: 100vh;
 
   padding: 40px 20px;
-  background-color: #2e2a67;
+  background-color: #0f172a;
   color: #e2e8f0;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.about-text {
+  flex: 1;
+  text-align: left;
+}
+
+.about-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #313c65;
 }
 
 .about h1 {
