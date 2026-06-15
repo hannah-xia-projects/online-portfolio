@@ -1,5 +1,7 @@
 import Navbar from "../components/Navbar";
 import HannahPic from "../assets/Hannah.jpg";
+import {Link} from "react-router-dom";
+import { FaEnvelope } from "react-icons/fa";
 
 export function About() {
     return (
@@ -43,7 +45,10 @@ export function About() {
                     <p>
                         I'm always open to new opportunities, collaborations, or just a chat.
                     </p>
-                    Say Hi
+                    <Link to="/contact" className="btn">
+                        <FaEnvelope className="icon" />
+                        <span>Say Hi</span>
+                    </Link>
                 </div>
             </section>
         </>
