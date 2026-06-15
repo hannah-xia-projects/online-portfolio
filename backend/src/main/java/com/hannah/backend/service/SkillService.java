@@ -16,6 +16,8 @@ public class SkillService {
         skills.add(new Skill("Spring Boot", "Intermediate"));
         skills.add(new Skill("Python", "Advanced"));
         skills.add(new Skill("C/C++", "Advanced"));
+        skills.add(new Skill("Database", "Advanced"));
+        skills.add(new Skill("Computer Graphics", "Intermediate"));
         skills.add(new Skill("Organization", "Advanced"));
         skills.add(new Skill("Teamwork", "Advanced"));
         skills.add(new Skill("Problem Solving", "Advanced"));

@@ -343,9 +343,74 @@ petals!
   font-size: 18px;
 }
 
-
 .btn:hover {
   background: #9764ca;
   color: white;
 }
 
+/* SKILLS PAGE */
+.skills {
+  min-height: 100vh;
+
+  padding: 60px 20px;
+  text-align: center;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.skill-card {
+  padding: 15px;
+  border: 2px solid #9764ca;
+  border-radius: 10px;
+
+  background: transparent;
+  color: #9764ca;
+  font-weight: 500;
+
+  transition: all 0.2s ease;
+}
+
+
+/* title */
+.skill-card h3 {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+/* level text */
+.skill-level {
+  font-size: 14px;
+  color: #94a3b8;
+  margin-bottom: 10px;
+}
+
+/* progress bar background */
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #1e293b;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* progress fill */
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #743ad8, #9764ca);
+  border-radius: 10px;
+  transition: width 0.5s ease-in-out;
+
+  animation: grow 1s ease forwards;
+}
+
+@keyframes grow {
+  from { width: 0; }
+}
