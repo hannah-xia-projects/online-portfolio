@@ -227,7 +227,8 @@ petals!
 .about {
   min-height: 100vh;
 
-  padding: 40px 20px;
+  /*padding: 40px 20px;*/
+  padding: 100px 20px 40px;
   background-color: #0f172a;
   color: #e2e8f0;
 }
@@ -352,17 +353,18 @@ petals!
 .skills {
   min-height: 100vh;
 
-  padding: 60px 20px;
   text-align: center;
+  /*padding: 60px 20px;*/
+  padding: 100px 20px 40px;
   background: #0f172a;
   color: #e2e8f0;
 }
 
 .skills-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -378,6 +380,12 @@ petals!
   transition: all 0.2s ease;
 }
 
+.skill-card:hover {
+  background: #9764ca;
+  color: white;
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(58, 174, 216, 0.25);
+}
 
 /* title */
 .skill-card h3 {
