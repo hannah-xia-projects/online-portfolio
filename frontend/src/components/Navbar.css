@@ -49,7 +49,7 @@
 
 /* Hover color */
 .nav-links a:hover {
-    color: #38bdf8;
+    color: #9764ca;
 }
 
 /* Underline animation */
@@ -60,7 +60,7 @@
     bottom: -4px;
     width: 0%;
     height: 2px;
-    background: #38bdf8;
+    background: #9764ca;
     transition: width 0.3s;
 }
 
