@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Navbar.css"; //navbar styling
 import logo from "../assets/logo-lpurp.png";
 
@@ -11,11 +11,11 @@ export default function Navbar() {
             </div>
 
             <div className="nav-links">
-                <Link to="/">Home</Link>
-                <Link to="/about">About</Link>
-                <Link to="/skills">Skills</Link>
-                <Link to="/projects">Projects</Link>
-                <Link to="/contact">Contact</Link>
+                <NavLink to="/">Home</NavLink>
+                <NavLink to="/about">About</NavLink>
+                <NavLink to="/skills">Skills</NavLink>
+                <NavLink to="/projects">Projects</NavLink>
+                <NavLink to="/contact">Contact</NavLink>
             </div>
         </nav>
     );

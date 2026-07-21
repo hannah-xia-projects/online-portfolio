@@ -52,6 +52,15 @@
     color: #9764ca;
 }
 
+.nav-links a.active {
+    color: #9764ca;
+}
+
+.nav-links a.active::after {
+    width: 100%;
+}
+
+
 /* Underline animation */
 .nav-links a::after {
     content: "";
