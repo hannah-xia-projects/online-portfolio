@@ -4,7 +4,17 @@ export default function ProjectCard({ project }) {
     return (
         <div className="project-card">
             <div className="project-content">
-                <h3>{project.title}</h3>
+                <h2>{project.title}</h2>
+
+                {/*<img*/}
+                {/*    src={project.imageUrl}*/}
+                {/*    alt={project.title}*/}
+                {/*    className={t.description}*/}
+                {/*    />*/}
+
+                <div className="project-image">
+
+                </div>
 
                 <p>{project.description}</p>
 

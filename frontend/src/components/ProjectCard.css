@@ -1,4 +1,7 @@
 .project-card {
+    width: 350px;
+    min-height: 500px;
+
     background: #111827;
     border: 1px solid #313c65;
     border-radius: 16px;
@@ -78,4 +81,16 @@
 
 .project-link:hover {
     color: white;
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+    margin-bottom: 16px;
+
+    border: 2px solid #313c65;
 }

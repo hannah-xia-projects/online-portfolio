@@ -23,7 +23,7 @@ export default function Projects() {
             <section className="projects">
                 <h1>Projects</h1>
 
-                <div className="project-grid">
+                <div className="projects-grid">
                     {projects.map((project) => (
                         <ProjectCard
                             key={project.id}
