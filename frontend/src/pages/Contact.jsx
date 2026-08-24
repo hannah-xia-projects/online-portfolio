@@ -36,7 +36,11 @@ export default function Contact() {
                 <h1>Contact</h1>
                 <div className="contact-container">
                     <div className="contact-info">
-                        <h2> Get in Touch: </h2>
+                        <h2> Get In Touch </h2>
+
+                        <p>
+                            I'm currently seeking software development opportunities. Feel free to reach out through any of the methods below!
+                        </p>
 
                         <a
                             href="https://github.com/hannah-xia-projects"
@@ -63,7 +67,7 @@ export default function Contact() {
 
                     <form className="contact-form"
                           onSubmit={handleSubmit}>
-                        <h2>Send A Message:</h2>
+                        <h2>Send A Message</h2>
                         <input type="text"
                                placeholder="Name"
                                value={name}
