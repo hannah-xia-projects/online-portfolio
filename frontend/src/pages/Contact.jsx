@@ -34,6 +34,65 @@ export default function Contact() {
 
             <section className="contact">
                 <h1>Contact</h1>
+                <div className="contact-container">
+                    <div className="contact-info">
+                        <h2> Get in Touch: </h2>
+
+                        <a
+                            href="https://github.com/hannah-xia-projects"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            <FaGithub />
+                            GitHub
+                        </a>
+
+                        <a
+                            href="https://www.linkedin.com/in/hannax/"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            <FaLinkedin />
+                            LinkedIn
+                        </a>
+
+                        <a
+                            href="mailto:hannahxia95@gmail.com">
+                            <FaEnvelope />
+                            Email
+                        </a>
+                    </div>
+
+                    <form className="contact-form"
+                          onSubmit={handleSubmit}>
+                        <h2>Send A Message:</h2>
+                        <input type="text"
+                               placeholder="Name"
+                               value={name}
+                               onChange={(e) => setName(e.target.value)}
+                               required
+                        />
+
+                        <input type="email"
+                               placeholder="Email"
+                               value={email}
+                               onChange={(e) => setEmail(e.target.value)}
+                               required
+                        />
+
+                        <textarea
+                               placeholder="Message"
+                               rows="6"
+                               value={message}
+                               onChange={(e) => setMessage(e.target.value)}
+                               required
+                        />
+
+                        <button type="submit">
+                            Send Message
+                        </button>
+
+                    </form>
+                </div>
+
             </section>
 
         </>
