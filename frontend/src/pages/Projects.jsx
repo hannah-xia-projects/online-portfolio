@@ -4,9 +4,16 @@ import { getProjects } from "../api/projectApi";
 import Navbar from "../components/Navbar";
 import ProjectCard from "../components/ProjectCard.jsx";
 
+//project images
+import portfolioImg from "../assets/logo-lpurp.png";
+
 export default function Projects() {
 
     const [projects, setProjects] = useState([]);
+
+    const projectImages = {
+        Portfolio: portfolioImg,
+    };
 
     useEffect(() => {
         getProjects()
@@ -28,6 +35,7 @@ export default function Projects() {
                         <ProjectCard
                             key={project.id}
                             project={project}
+                            image={projectImages[project.title]}
                         />
                     ))}
                 </div>
