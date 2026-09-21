@@ -6,6 +6,8 @@ import ProjectCard from "../components/ProjectCard.jsx";
 
 //project images
 import portfolioImg from "../assets/logo-lpurp.png";
+import ardsImg from "../assets/ARDS-image.png";
+import challengesImg from "../assets/CodingChallenges.png"
 
 export default function Projects() {
 
@@ -13,6 +15,8 @@ export default function Projects() {
 
     const projectImages = {
         Portfolio: portfolioImg,
+        "Project ARDS": ardsImg,
+        "Coding Challenges": challengesImg,
     };
 
     useEffect(() => {
