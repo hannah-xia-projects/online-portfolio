@@ -14,7 +14,7 @@ export default function Contact() {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        await api.post("/contact", {
+        await api.post("/api/contact", {
             name,
             email,
             message,
