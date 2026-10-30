@@ -34,7 +34,7 @@ export default function Contact() {
                 error.response?.data || error.message
             );
 
-            alert("Message could not be sent. Check the console.");
+            alert("Message could not be sent at this time. Please use the email button under 'Get in Touch' instead");
         }
     };
 
