@@ -101,7 +101,7 @@ export default function Contact() {
                         />
 
                         <button type="submit">
-                            Send Message TEST
+                            Send Message
                         </button>
 
                     </form>
