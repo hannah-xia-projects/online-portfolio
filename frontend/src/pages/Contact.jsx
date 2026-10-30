@@ -14,18 +14,28 @@ export default function Contact() {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        await api.post("/api/contact", {
-            name,
-            email,
-            message,
-        })
+        try {
+            await api.post("/api/contact", {
+                name,
+                email,
+                message,
+            })
 
-        //reset setName, etc again
-        setName("");
-        setEmail("");
-        setMessage("");
+            //reset setName, etc again
+            setName("");
+            setEmail("");
+            setMessage("");
 
-        alert("Message sent!")
+            alert("Message sent!");
+        } catch (error) {
+            console.error(
+                "Message failed:",
+                error.response?.status,
+                error.response?.data || error.message
+            );
+
+            alert("Message could not be sent. Check the console.");
+        }
     };
 
     return (
