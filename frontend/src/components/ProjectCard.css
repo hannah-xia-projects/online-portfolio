@@ -65,9 +65,31 @@
     margin-bottom: 20px;
 }
 
+/*
 .feature-badge {
     color: #e2e8f0;
     font-size: 14px;
+} */
+
+.feature-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 14px;
+    border-radius: 999px;
+
+    background: rgba(168, 85, 247, 0.12);
+    border: 1px solid rgba(168, 85, 247, 0.25);
+
+    color: #c4b5fd;
+    font-size: 0.9rem;
+    font-weight: 500;
+
+    transition: all 0.2s ease;
+}
+
+.feature-badge:hover {
+    background: rgba(168, 85, 247, 0.18);
+    transform: translateY(-1px);
 }
 
 .project-link {
@@ -100,4 +122,16 @@
     height: 100%;
 
     object-fit: contain;
+}
+
+.github-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;               /* space between icon and text */
+    text-decoration: none;  /* removes underline */
+    color: #b794f6;         /* lavender */
+}
+
+.github-link:hover {
+    color: #d8b4fe;
 }

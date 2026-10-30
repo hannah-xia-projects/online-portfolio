@@ -21,6 +21,9 @@ public class SkillService {
         skills.add(new Skill("Organization", "Advanced"));
         skills.add(new Skill("Teamwork", "Advanced"));
         skills.add(new Skill("Problem Solving", "Advanced"));
+        skills.add(new Skill("PowerBI", "Intermediate"));
+        skills.add(new Skill("AzureDevOps", "Intermediate"));
+        skills.add(new Skill("PowerApps", "Intermediate"));
 
         return skills;
     }

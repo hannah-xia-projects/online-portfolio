@@ -7,7 +7,9 @@ import ProjectCard from "../components/ProjectCard.jsx";
 //project images
 import portfolioImg from "../assets/logo-lpurp.png";
 import ardsImg from "../assets/ARDS-image.png";
-import challengesImg from "../assets/CodingChallenges.png"
+import challengesImg from "../assets/CodingChallenges.png";
+import seng300f24Img from "../assets/seng300-f24-project.png";
+import passwordManagerImg from "../assets/password-manager.webp";
 
 export default function Projects() {
 
@@ -17,6 +19,8 @@ export default function Projects() {
         Portfolio: portfolioImg,
         "Project ARDS": ardsImg,
         "Coding Challenges": challengesImg,
+        "SENG300 f24 Project": seng300f24Img,
+        "Password Manager": passwordManagerImg
     };
 
     useEffect(() => {

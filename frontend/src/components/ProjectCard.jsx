@@ -1,4 +1,5 @@
 import "./ProjectCard.css";
+import { FaGithub } from "react-icons/fa"; //import the github symbol for the link
 
 export default function ProjectCard({ project, image }) {
     return (
@@ -32,8 +33,8 @@ export default function ProjectCard({ project, image }) {
                 </div>
 
                 <div className="project-features">
-                    {project.hasFrontend && <span>✅ Frontend</span>}
-                    {project.hasBackend && <span>✅ Backend</span>}
+                    {project.hasFrontend && <span className="feature-badge">✦ Frontend</span>}
+                    {project.hasBackend && <span className="feature-badge">✦ Backend</span>}
                 </div>
 
                 <div className="project-links">
@@ -41,8 +42,10 @@ export default function ProjectCard({ project, image }) {
                         href={project.githubURL}
                         target="_blank"
                         rel="noopener noreferrer"
+                        className="github-link"
                     >
-                        GitHub
+                        <FaGithub />
+                        <span>GitHub</span>
                     </a>
                 </div>
             </div>
